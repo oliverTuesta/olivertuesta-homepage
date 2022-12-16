@@ -2,8 +2,8 @@ import { Box, Container, Heading } from '@chakra-ui/react';
 
 const Home = () => {
     return (
-        <Container maxW="container.md" pt={14}>
-            <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
+        <Container>
+            <Box borderRadius="lg" bg="glassTeal" p={3} mb={6} align="center">
                 Hi, I&apos;m a software engineer based in Lima, Peru.
             </Box>
             <Box display={{ md: 'flex' }}>

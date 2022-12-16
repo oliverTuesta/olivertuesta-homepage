@@ -1,5 +1,6 @@
 import Logo from './logo';
 import NextLink from 'next/link';
+import ThemeToggleButton from './theme-toggle-button';
 
 import {
     Box,
@@ -19,15 +20,17 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 const LinkItem = ({ href, path, children }) => {
     const active = path === href;
-    const inactiveColor = useColorModeValue('gray.400', 'whiteAlpha.900');
+    const inactiveColor = useColorModeValue('gray.1000', 'whiteAlpha.900');
     return (
         <Link
             as={NextLink}
             align="center"
             href={href}
-            px={2}
             bg={active ? 'glassTeal' : undefined}
             color={active ? '#202023' : inactiveColor}
+            borderRadius="md"
+            px={2}
+            py={1}
         >
             {children}
         </Link>
@@ -60,12 +63,12 @@ const Navbar = (props) => {
                 </Flex>
 
                 <Stack
-                    direction={{ base: 'column', md: 'row' }}
-                    display={{ base: 'none', md: 'flex' }}
-                    width={{ base: 'full', md: 'auto' }}
+                    direction={{ base: 'column', sm: 'row' }}
+                    display={{ base: 'none', sm: 'flex' }}
+                    width={{ base: 'full', sm: 'auto' }}
                     alignItems="center"
                     flexGrow={1}
-                    mt={{ base: 4, md: 0 }}
+                    mt={{ base: 4, sm: 0 }}
                 >
                     <LinkItem href="/" path={path}>
                         About
@@ -79,7 +82,8 @@ const Navbar = (props) => {
                 </Stack>
 
                 <Box flex={1} align="right">
-                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                    <ThemeToggleButton />
+                    <Box ml={2} display={{ base: 'inline-block', sm: 'none' }}>
                         <Menu>
                             <MenuButton
                                 as={IconButton}
@@ -98,8 +102,8 @@ const Navbar = (props) => {
                                     <MenuItem>Posts</MenuItem>
                                 </Link>
                                 <Link
+                                    isExternal
                                     href="https://github.com/oliverTuesta"
-                                    passHref
                                 >
                                     <MenuItem>Github</MenuItem>
                                 </Link>

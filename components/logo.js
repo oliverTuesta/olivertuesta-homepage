@@ -32,7 +32,6 @@ const Logo = () => {
                 <Text
                     color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                     fontFamily="Poppins"
-                    fontSize="1.2rem"
                     ml={3}
                 >
                     SPIGI

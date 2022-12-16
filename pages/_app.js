@@ -1,11 +1,11 @@
 import { ChakraProvider, Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
-import Navbar from './components/navbar';
-import { withRouter } from 'next/router';
+import Navbar from '../components/navbar';
+import theme from '../lib/theme';
 
 function MyApp({ Component, pageProps, router }) {
     return (
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
             <Box as="main" pb={8}>
                 <Head>
                     <meta
@@ -18,7 +18,8 @@ function MyApp({ Component, pageProps, router }) {
                 </Head>
 
                 <Navbar path={router.asPath} />
-                <Container maxW="container.md">
+
+                <Container maxW="container.md" pt={14}>
                     <Component {...pageProps} />
                 </Container>
             </Box>

@@ -2,7 +2,7 @@ import { Container, Box } from '@chakra-ui/react';
 
 const Posts = () => {
     return (
-        <Container maxW="container.md" pt={14}>
+        <Container>
             <h1>Posts</h1>
             <p>
                 Ipsum laboriosam ipsam temporibus vero autem commodi molestiae?
