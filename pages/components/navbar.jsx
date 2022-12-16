@@ -44,7 +44,6 @@ const Navbar = (props) => {
             bg={useColorModeValue('#ffffff40', '#20202380')}
             style={{ backdropFilter: 'blur(10px)' }}
             zIndex={1}
-            {...props}
         >
             <Container
                 display="flex"
@@ -69,7 +68,7 @@ const Navbar = (props) => {
                     mt={{ base: 4, md: 0 }}
                 >
                     <LinkItem href="/" path={path}>
-                        Home
+                        About
                     </LinkItem>
                     <LinkItem href="/works" path={path}>
                         Works
@@ -89,15 +88,21 @@ const Navbar = (props) => {
                                 variant="outline"
                             />
                             <MenuList>
-                                <MenuItem as={NextLink} href="/">
-                                    Home
-                                </MenuItem>
-                                <MenuItem as={NextLink} href="/works">
-                                    Works
-                                </MenuItem>
-                                <MenuItem as={NextLink} href="/posts">
-                                    Posts
-                                </MenuItem>
+                                <Link as={NextLink} href="/" passHref>
+                                    <MenuItem>About</MenuItem>
+                                </Link>
+                                <Link as={NextLink} href="/works" passHref>
+                                    <MenuItem>Works</MenuItem>
+                                </Link>
+                                <Link as={NextLink} href="/posts" passHref>
+                                    <MenuItem>Posts</MenuItem>
+                                </Link>
+                                <Link
+                                    href="https://github.com/oliverTuesta"
+                                    passHref
+                                >
+                                    <MenuItem>Github</MenuItem>
+                                </Link>
                             </MenuList>
                         </Menu>
                     </Box>
