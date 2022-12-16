@@ -1,4 +1,5 @@
 import { Box, Container, Heading } from '@chakra-ui/react';
+import Section from '../layouts/section';
 
 const Home = () => {
     return (
@@ -17,6 +18,17 @@ const Home = () => {
                     </p>
                 </Box>
             </Box>
+
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Work
+                </Heading>
+                <p>
+                    Consectetur voluptatum similique quaerat deserunt
+                    consequatur? Nam obcaecati eum praesentium dolore recusandae
+                    Praesentium placeat deleniti
+                </p>
+            </Section>
         </Container>
     );
 };
