@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+import { Box, Container, Heading } from '@chakra-ui/react';
 import Section from '../layouts/section';
+=======
 import {
     Box,
     Container,
@@ -6,6 +9,7 @@ import {
     Image,
     useColorModeValue,
 } from '@chakra-ui/react';
+>>>>>>> feature/content
 
 const Home = () => {
     return (

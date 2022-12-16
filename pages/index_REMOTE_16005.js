@@ -1,4 +1,3 @@
-import Section from '../layouts/section';
 import {
     Box,
     Container,
@@ -46,17 +45,6 @@ const Home = () => {
                     />
                 </Box>
             </Box>
-
-            <Section delay={0.1}>
-                <Heading as="h3" variant="section-title">
-                    Work
-                </Heading>
-                <p>
-                    Consectetur voluptatum similique quaerat deserunt
-                    consequatur? Nam obcaecati eum praesentium dolore recusandae
-                    Praesentium placeat deleniti
-                </p>
-            </Section>
         </Container>
     );
 };
