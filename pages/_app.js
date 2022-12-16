@@ -1,11 +1,13 @@
 import { ChakraProvider, Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
-import Navbar from '../components/navbar';
+import Navbar from '../layouts/navbar';
 import theme from '../lib/theme';
+import Fonts from '../layouts/fonts';
 
 function MyApp({ Component, pageProps, router }) {
     return (
         <ChakraProvider theme={theme}>
+            <Fonts />
             <Box as="main" pb={8}>
                 <Head>
                     <meta

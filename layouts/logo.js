@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
-import '@fontsource/poppins/700.css';
 
 const LogoBox = styled.span`
     font-weight: bold;
@@ -31,7 +30,6 @@ const Logo = () => {
                 />
                 <Text
                     color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                    fontFamily="Poppins"
                     ml={3}
                 >
                     SPIGI
