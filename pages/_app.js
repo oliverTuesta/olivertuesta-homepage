@@ -1,4 +1,4 @@
-import { ChakraProvider, Box } from '@chakra-ui/react';
+import { ChakraProvider, Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
 import Navbar from './components/navbar';
 import { withRouter } from 'next/router';
@@ -16,8 +16,11 @@ function MyApp({ Component, pageProps, router }) {
                     <link rel="icon" href="/favicon.ico" />
                     <title>Oliver Tuesta - Homepage</title>
                 </Head>
+
                 <Navbar path={router.asPath} />
-                <Component {...pageProps} />
+                <Container maxW="container.md">
+                    <Component {...pageProps} />
+                </Container>
             </Box>
         </ChakraProvider>
     );

@@ -11,12 +11,11 @@ import {
     Menu,
     MenuItem,
     MenuList,
-    MenuButotn,
+    MenuButton,
     IconButton,
     useColorModeValue,
 } from '@chakra-ui/react';
-
-import { HumburgerIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 const LinkItem = ({ href, path, children }) => {
     const active = path === href;
@@ -79,6 +78,30 @@ const Navbar = (props) => {
                         Posts
                     </LinkItem>
                 </Stack>
+
+                <Box flex={1} align="right">
+                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                        <Menu>
+                            <MenuButton
+                                as={IconButton}
+                                aria-label="Options"
+                                icon={<HamburgerIcon />}
+                                variant="outline"
+                            />
+                            <MenuList>
+                                <MenuItem as={NextLink} href="/">
+                                    Home
+                                </MenuItem>
+                                <MenuItem as={NextLink} href="/works">
+                                    Works
+                                </MenuItem>
+                                <MenuItem as={NextLink} href="/posts">
+                                    Posts
+                                </MenuItem>
+                            </MenuList>
+                        </Menu>
+                    </Box>
+                </Box>
             </Container>
         </Box>
     );
