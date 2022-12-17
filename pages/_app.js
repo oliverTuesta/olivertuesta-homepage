@@ -1,8 +1,8 @@
 import { ChakraProvider, Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
-import Navbar from '../layouts/navbar';
+import Navbar from '../components/navbar';
 import theme from '../lib/theme';
-import Fonts from '../layouts/fonts';
+import Fonts from '../components/fonts';
 
 function MyApp({ Component, pageProps, router }) {
     return (

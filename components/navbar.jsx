@@ -39,6 +39,7 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = (props) => {
     const { path } = props;
+    const linkColor = useColorModeValue('gray.1000', 'whiteAlpha.900');
     return (
         <Box
             position="fixed"
@@ -92,18 +93,34 @@ const Navbar = (props) => {
                                 variant="outline"
                             />
                             <MenuList>
-                                <Link as={NextLink} href="/" passHref>
+                                <Link
+                                    as={NextLink}
+                                    color={linkColor}
+                                    href="/"
+                                    passHref
+                                >
                                     <MenuItem>About</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/works" passHref>
+                                <Link
+                                    as={NextLink}
+                                    href="/works"
+                                    passHref
+                                    color={linkColor}
+                                >
                                     <MenuItem>Works</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/posts" passHref>
+                                <Link
+                                    as={NextLink}
+                                    href="/posts"
+                                    passHref
+                                    color={linkColor}
+                                >
                                     <MenuItem>Posts</MenuItem>
                                 </Link>
                                 <Link
                                     isExternal
                                     href="https://github.com/oliverTuesta"
+                                    color={linkColor}
                                 >
                                     <MenuItem>Github</MenuItem>
                                 </Link>

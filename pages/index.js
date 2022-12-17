@@ -1,11 +1,17 @@
-import Section from '../layouts/section';
+import NextLink from 'next/link';
 import {
     Box,
+    Button,
     Container,
     Heading,
     Image,
     useColorModeValue,
+    Link,
 } from '@chakra-ui/react';
+import Section from '../components/section';
+import Paragraph from '../components/paragraph';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { BioSection, BioYear } from '../components/bio';
 
 const Home = () => {
     return (
@@ -49,13 +55,61 @@ const Home = () => {
 
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Work
+                    About Oliver
                 </Heading>
-                <p>
-                    Consectetur voluptatum similique quaerat deserunt
-                    consequatur? Nam obcaecati eum praesentium dolore recusandae
-                    Praesentium placeat deleniti
-                </p>
+                <Paragraph>
+                    Oliver is a software engineering student from Peru with a
+                    passion for web development and Linux. He enjoys using his
+                    coding skills to solve problems and is always looking for
+                    ways to improve his abilities. When not in front of a
+                    computer, Oliver enjoys reading books, going to the gym,
+                    solving puzzles, and drawing. He is driven and dedicated to
+                    his studies and is eager to put his skills to use in the
+                    field of software engineering.
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works" passHref>
+                        <Button
+                            rightIcon={<ChevronRightIcon />}
+                            colorScheme="teal"
+                        >
+                            Portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
+            </Section>
+
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>2004</BioYear>
+                    Born in Amazonas, Peru
+                </BioSection>
+                <BioSection>
+                    <BioYear>2014</BioYear>Write my first Hello World program
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>Started the hobby of reading books
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021 - present</BioYear>
+                    Studying Software Engineering
+                </BioSection>
+            </Section>
+
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Interests
+                </Heading>
+                <Paragraph>
+                    Web development,{' '}
+                    <Link href="https://twitter.com/spigiplant" isExternal>
+                        Drawing
+                    </Link>
+                    , Art and Machine Learning
+                </Paragraph>
             </Section>
         </Container>
     );
