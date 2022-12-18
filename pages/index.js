@@ -7,11 +7,16 @@ import {
     Image,
     useColorModeValue,
     Link,
+    ListItem,
+    List,
 } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio';
+import SocialLink from '../components/social-link';
+
+import { IoLogoTwitter, IoLogoGithub, IoMdMail } from 'react-icons/io';
 
 const Home = () => {
     return (
@@ -72,8 +77,14 @@ const Home = () => {
                         <Button
                             rightIcon={<ChevronRightIcon />}
                             colorScheme="teal"
+                            mr={4}
                         >
                             Portfolio
+                        </Button>
+                    </NextLink>
+                    <NextLink href="mailto:oliver.jtuesta@gmail.com" isExternal>
+                        <Button rightIcon={<IoMdMail />} colorScheme="purple">
+                            Contact
                         </Button>
                     </NextLink>
                 </Box>
@@ -88,10 +99,10 @@ const Home = () => {
                     Born in Amazonas, Peru
                 </BioSection>
                 <BioSection>
-                    <BioYear>2014</BioYear>Write my first Hello World program
+                    <BioYear>2017</BioYear>Write my first Hello World program
                 </BioSection>
                 <BioSection>
-                    <BioYear>2021</BioYear>Started the hobby of reading books
+                    <BioYear>2020</BioYear>Started the hobby of reading books
                 </BioSection>
                 <BioSection>
                     <BioYear>2021 - present</BioYear>
@@ -104,13 +115,47 @@ const Home = () => {
                     Interests
                 </Heading>
                 <Paragraph>
-                    Web development,{' '}
+                    Art,{' '}
+                    <Link href="https://twitter.com/oliver_tuesta" isExternal>
+                        Web development
+                    </Link>
+                    {', '} Machine learning,{' '}
                     <Link href="https://twitter.com/spigiplant" isExternal>
                         Drawing
                     </Link>
-                    , Art and Machine Learning
                 </Paragraph>
             </Section>
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Social Links
+                </Heading>
+            </Section>
+            <List>
+                <ListItem>
+                    <SocialLink
+                        href="https://github.com/oliverTuesta"
+                        Icon={<IoLogoGithub />}
+                    >
+                        @oliverTuesta
+                    </SocialLink>
+                </ListItem>
+                <ListItem>
+                    <SocialLink
+                        href="https://twitter.com/oliver_tuesta"
+                        Icon={<IoLogoTwitter />}
+                    >
+                        @oliver_tuesta
+                    </SocialLink>
+                </ListItem>
+                <ListItem>
+                    <SocialLink
+                        href="https://twitter.com/spigiplant"
+                        Icon={<IoLogoTwitter />}
+                    >
+                        @spigiplant
+                    </SocialLink>
+                </ListItem>
+            </List>
         </Container>
     );
 };
