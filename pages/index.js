@@ -16,7 +16,12 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio';
 import SocialLink from '../components/social-link';
 
-import { IoLogoTwitter, IoLogoGithub, IoMdMail } from 'react-icons/io';
+import {
+    IoLogoTwitter,
+    IoLogoGithub,
+    IoMdMail,
+    IoLogoLinkedin,
+} from 'react-icons/io';
 
 const Home = () => {
     return (
@@ -129,33 +134,41 @@ const Home = () => {
                 <Heading as="h3" variant="section-title">
                     Social Links
                 </Heading>
+                <List>
+                    <ListItem>
+                        <SocialLink
+                            href="https://www.linkedin.com/in/oliver-jes%C3%BAs-tuesta-yoplac-533ba4200/"
+                            Icon={<IoLogoLinkedin />}
+                        >
+                            Oliver Tuesta
+                        </SocialLink>
+                    </ListItem>
+                    <ListItem>
+                        <SocialLink
+                            href="https://github.com/oliverTuesta"
+                            Icon={<IoLogoGithub />}
+                        >
+                            @oliverTuesta
+                        </SocialLink>
+                    </ListItem>
+                    <ListItem>
+                        <SocialLink
+                            href="https://twitter.com/oliver_tuesta"
+                            Icon={<IoLogoTwitter />}
+                        >
+                            @oliver_tuesta
+                        </SocialLink>
+                    </ListItem>
+                    <ListItem>
+                        <SocialLink
+                            href="https://twitter.com/spigiplant"
+                            Icon={<IoLogoTwitter />}
+                        >
+                            @spigiplant
+                        </SocialLink>
+                    </ListItem>
+                </List>
             </Section>
-            <List>
-                <ListItem>
-                    <SocialLink
-                        href="https://github.com/oliverTuesta"
-                        Icon={<IoLogoGithub />}
-                    >
-                        @oliverTuesta
-                    </SocialLink>
-                </ListItem>
-                <ListItem>
-                    <SocialLink
-                        href="https://twitter.com/oliver_tuesta"
-                        Icon={<IoLogoTwitter />}
-                    >
-                        @oliver_tuesta
-                    </SocialLink>
-                </ListItem>
-                <ListItem>
-                    <SocialLink
-                        href="https://twitter.com/spigiplant"
-                        Icon={<IoLogoTwitter />}
-                    >
-                        @spigiplant
-                    </SocialLink>
-                </ListItem>
-            </List>
         </Container>
     );
 };
