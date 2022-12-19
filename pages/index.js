@@ -25,9 +25,9 @@ import {
 
 const Home = () => {
     return (
-        <Container>
+        <Container maxW="container.md">
             <Box
-                borderRadius="lg"
+                borderRadius="10"
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                 p={3}
                 mb={6}
@@ -87,7 +87,7 @@ const Home = () => {
                             Portfolio
                         </Button>
                     </NextLink>
-                    <NextLink href="mailto:oliver.jtuesta@gmail.com" isExternal>
+                    <NextLink href="mailto:oliver.jtuesta@gmail.com">
                         <Button rightIcon={<IoMdMail />} colorScheme="purple">
                             Contact
                         </Button>
