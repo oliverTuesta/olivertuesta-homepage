@@ -51,15 +51,22 @@ const Home = () => {
                     ml={{ md: 6 }}
                     align="center"
                 >
-                    <Image
+                    <Box
                         borderColor="whiteAlpha.800"
                         borderWidth={2}
                         borderStyle="solid"
-                        maxWidth="100px"
-                        display="inline-block"
                         borderRadius="full"
-                        src="/images/spigi.jpg"
-                    />
+                        overflow={'hidden'}
+                        width="150px"
+                        height="150px"
+                        bg={useColorModeValue('orange.100', 'teal.50')}
+                    >
+                        <Image
+                            maxWidth="100px"
+                            display="inline-block"
+                            src="/images/spigi.png"
+                        />
+                    </Box>
                 </Box>
             </Box>
 
