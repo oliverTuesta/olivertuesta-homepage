@@ -2,6 +2,8 @@ import { Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
 import Navbar from '../navbar';
 import PageTransition from '../page-transition';
+import Avocado from '../avocado';
+import NoSsr from '../no-ssr';
 
 const Main = ({ children, router }) => {
     return (
@@ -19,6 +21,9 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath} />
 
             <Container maxW="container.lg" pt={14}>
+                <NoSsr>
+                    <Avocado />
+                </NoSsr>
                 {children}
             </Container>
         </Box>
