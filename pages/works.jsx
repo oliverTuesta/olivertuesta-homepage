@@ -8,7 +8,7 @@ import Layout from '../components/layouts/article';
 
 const Works = () => {
     return (
-        <Layout title="works">
+        <Layout title="Works">
             <Container>
                 <GridItemsStyle />
                 <Heading as={'h3'} mb={4} fontSize="xl">

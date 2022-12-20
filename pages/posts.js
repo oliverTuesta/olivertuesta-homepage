@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article';
 
 const Posts = () => {
     return (
-        <Layout>
+        <Layout title="Posts">
             <Container>
                 <h1>Posts</h1>
                 <p>
