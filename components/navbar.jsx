@@ -89,7 +89,6 @@ const Navbar = (props) => {
                     <Box ml={2} display={{ base: 'inline-block', sm: 'none' }}>
                         <Menu>
                             <MenuButton
-                                scroll={false}
                                 as={IconButton}
                                 aria-label="Options"
                                 icon={<HamburgerIcon />}

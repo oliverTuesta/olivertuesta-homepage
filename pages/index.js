@@ -61,7 +61,7 @@ const Home = () => {
                             overflow={'hidden'}
                             width="150px"
                             height="150px"
-                            bg={useColorModeValue('teal.100', 'cyan.100')}
+                            bg={useColorModeValue('cyan.100', 'cyan.50')}
                         >
                             <Image
                                 display="inline-block"
@@ -86,7 +86,7 @@ const Home = () => {
                         skills to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
-                        <NextLink href="/works" passHref>
+                        <NextLink href="/works" scroll={false}>
                             <Button
                                 rightIcon={<ChevronRightIcon />}
                                 colorScheme="teal"

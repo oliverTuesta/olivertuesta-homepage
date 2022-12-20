@@ -20,7 +20,7 @@ const LogoBox = styled.span`
 const Logo = () => {
     const footPrintImg = `/images/cactus.png`;
     return (
-        <Link href="/">
+        <Link href="/" scroll={false}>
             <LogoBox>
                 <Image
                     src={footPrintImg}
