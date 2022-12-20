@@ -86,9 +86,9 @@ const Avocado = () => {
 
                 if (frame <= 100) {
                     const p = initialCameraPosition;
-                    const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
+                    const rotSpeed = -easeOutCirc(frame / 100) * Math.PI * 20;
 
-                    camera.position.y = 10;
+                    camera.position.y = 5;
                     camera.position.x =
                         p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed);
                     camera.position.z =

@@ -30,7 +30,7 @@ const Home = () => {
             <Container maxW="container.md">
                 <Box
                     borderRadius="10"
-                    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+                    bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
                     p={3}
                     mb={6}
                     align="center"
@@ -61,7 +61,7 @@ const Home = () => {
                             overflow={'hidden'}
                             width="150px"
                             height="150px"
-                            bg={useColorModeValue('cyan.100', 'cyan.50')}
+                            bg={useColorModeValue('teal.100', 'cyan.100')}
                         >
                             <Image
                                 display="inline-block"
