@@ -35,7 +35,7 @@ const Home = () => {
             >
                 Hi, I&apos;m a software engineer based in Lima, Peru.
             </Box>
-            <Box display={{ md: 'flex' }}>
+            <Box display={{ sm: 'flex' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Oliver Tuesta
@@ -48,7 +48,7 @@ const Home = () => {
                 <Box
                     flexShrink={0}
                     mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
+                    ml={{ sm: 6 }}
                     align="center"
                 >
                     <Box
@@ -59,13 +59,9 @@ const Home = () => {
                         overflow={'hidden'}
                         width="150px"
                         height="150px"
-                        bg={useColorModeValue('orange.100', 'teal.50')}
+                        bg={useColorModeValue('teal.100', 'cyan.100')}
                     >
-                        <Image
-                            maxWidth="100px"
-                            display="inline-block"
-                            src="/images/spigi.png"
-                        />
+                        <Image display="inline-block" src="/images/spigi.png" />
                     </Box>
                 </Box>
             </Box>
@@ -76,7 +72,7 @@ const Home = () => {
                 </Heading>
                 <Paragraph>
                     Oliver is a software engineering student from Peru with a
-                    passion for web development and Linux. He enjoys using his
+                    passion for web development and Art. He enjoys using his
                     coding skills to solve problems and is always looking for
                     ways to improve his abilities. When not in front of a
                     computer, Oliver enjoys reading books, going to the gym,
