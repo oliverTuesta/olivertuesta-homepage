@@ -24,6 +24,7 @@ const LinkItem = ({ href, path, children }) => {
     return (
         <Link
             as={NextLink}
+            scroll={false}
             align="center"
             href={href}
             bg={active ? 'glassTeal' : undefined}
@@ -88,6 +89,7 @@ const Navbar = (props) => {
                     <Box ml={2} display={{ base: 'inline-block', sm: 'none' }}>
                         <Menu>
                             <MenuButton
+                                scroll={false}
                                 as={IconButton}
                                 aria-label="Options"
                                 icon={<HamburgerIcon />}
@@ -95,6 +97,7 @@ const Navbar = (props) => {
                             />
                             <MenuList>
                                 <Link
+                                    scroll={false}
                                     as={NextLink}
                                     color={linkColor}
                                     href="/"
@@ -103,6 +106,7 @@ const Navbar = (props) => {
                                     <MenuItem>About</MenuItem>
                                 </Link>
                                 <Link
+                                    scroll={false}
                                     as={NextLink}
                                     href="/works"
                                     passHref
@@ -111,6 +115,7 @@ const Navbar = (props) => {
                                     <MenuItem>Works</MenuItem>
                                 </Link>
                                 <Link
+                                    scroll={false}
                                     as={NextLink}
                                     href="/posts"
                                     passHref

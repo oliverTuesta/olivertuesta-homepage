@@ -22,11 +22,11 @@ import {
     IoMdMail,
     IoLogoLinkedin,
 } from 'react-icons/io';
-import Layout from '../components/layouts/article';
+import PageTransition from '../components/page-transition';
 
 const Home = () => {
     return (
-        <Layout>
+        <PageTransition>
             <Container maxW="container.md">
                 <Box
                     borderRadius="10"
@@ -86,6 +86,14 @@ const Home = () => {
                         skills to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
+                        <Link href="/works">
+                            <Button
+                                rightIcon={<ChevronRightIcon />}
+                                colorScheme="teal"
+                            >
+                                Read More
+                            </Button>
+                        </Link>
                         <NextLink href="/works" passHref>
                             <Button
                                 rightIcon={<ChevronRightIcon />}
@@ -186,7 +194,7 @@ const Home = () => {
                     </List>
                 </Section>
             </Container>
-        </Layout>
+        </PageTransition>
     );
 };
 

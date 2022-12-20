@@ -1,6 +1,6 @@
 import { ChakraProvider, Box, Container } from '@chakra-ui/react';
-import Head from 'next/head';
-import Navbar from '../components/navbar';
+import Layout from '../components/layouts/main';
+import { AnimatePresence } from 'framer-motion';
 import theme from '../lib/theme';
 import Fonts from '../components/fonts';
 
@@ -8,23 +8,11 @@ function MyApp({ Component, pageProps, router }) {
     return (
         <ChakraProvider theme={theme}>
             <Fonts />
-            <Box as="main" pb={8}>
-                <Head>
-                    <meta
-                        name="viewport"
-                        content="initial-scale=1.0, width=device-width"
-                    />
-                    <meta name="description" content="Oliver's homepage" />
-                    <link rel="icon" href="/favicon.ico" />
-                    <title>Oliver Tuesta - Homepage</title>
-                </Head>
-
-                <Navbar path={router.asPath} />
-
-                <Container maxW="container.lg" pt={14}>
-                    <Component {...pageProps} />
-                </Container>
-            </Box>
+            <Layout router={router}>
+                <AnimatePresence mode="wait" initial={true}>
+                    <Component {...pageProps} key={router.route} />
+                </AnimatePresence>
+            </Layout>
         </ChakraProvider>
     );
 }
