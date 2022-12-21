@@ -22,6 +22,8 @@ import {
     IoMdMail,
     IoLogoLinkedin,
 } from 'react-icons/io';
+import { SiLeetcode } from 'react-icons/si';
+
 import Layout from '../components/layouts/article';
 
 const Home = () => {
@@ -54,14 +56,17 @@ const Home = () => {
                         align="center"
                     >
                         <Box
-                            borderColor="whiteAlpha.800"
-                            borderWidth={2}
+                            borderColor={useColorModeValue(
+                                'white',
+                                'whiteAlpha.900'
+                            )}
+                            borderWidth={3}
                             borderStyle="solid"
                             borderRadius="full"
                             overflow={'hidden'}
                             width="150px"
                             height="150px"
-                            bg={useColorModeValue('teal.100', 'cyan.100')}
+                            bg={useColorModeValue('glassTeal', '#FAC887')}
                         >
                             <Image
                                 display="inline-block"
@@ -77,29 +82,26 @@ const Home = () => {
                     </Heading>
                     <Paragraph>
                         Oliver is a software engineering student from Peru with
-                        a passion for web development and Art. He enjoys using
-                        his coding skills to solve problems and is always
-                        looking for ways to improve his abilities. When not in
-                        front of a computer, Oliver enjoys reading books, going
-                        to the gym, solving puzzles, and drawing. He is driven
-                        and dedicated to his studies and is eager to put his
-                        skills to use in the field of software engineering.
+                        a passion for computers and art. He enjoys using his
+                        coding skills to solve problems and is always looking
+                        for ways to improve his abilities. When not in front of
+                        a computer, Oliver enjoys reading books, going to the
+                        gym, solving puzzles, and drawing. He is driven and
+                        dedicated to his studies and is eager to put his skills
+                        to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works" scroll={false}>
                             <Button
                                 rightIcon={<ChevronRightIcon />}
-                                colorScheme="teal"
+                                colorScheme="orange"
                                 mr={4}
                             >
                                 Portfolio
                             </Button>
                         </NextLink>
                         <NextLink href="mailto:oliver.jtuesta@gmail.com">
-                            <Button
-                                rightIcon={<IoMdMail />}
-                                colorScheme="purple"
-                            >
+                            <Button rightIcon={<IoMdMail />} colorScheme="teal">
                                 Contact
                             </Button>
                         </NextLink>
@@ -117,10 +119,6 @@ const Home = () => {
                     <BioSection>
                         <BioYear>2017</BioYear>Write my first Hello World
                         program
-                    </BioSection>
-                    <BioSection>
-                        <BioYear>2020</BioYear>Started the hobby of reading
-                        books
                     </BioSection>
                     <BioSection>
                         <BioYear>2021 - present</BioYear>
@@ -150,7 +148,7 @@ const Home = () => {
                     <Heading as="h3" variant="section-title">
                         Social Links
                     </Heading>
-                    <List>
+                    <List display="flex" flexWrap="wrap">
                         <ListItem>
                             <SocialLink
                                 href="https://www.linkedin.com/in/oliver-jes%C3%BAs-tuesta-yoplac-533ba4200/"
@@ -171,6 +169,14 @@ const Home = () => {
                             <SocialLink
                                 href="https://twitter.com/oliver_tuesta"
                                 Icon={<IoLogoTwitter />}
+                            >
+                                @oliver_tuesta
+                            </SocialLink>
+                        </ListItem>
+                        <ListItem>
+                            <SocialLink
+                                href="https://leetcode.com/oliver_tuesta/"
+                                Icon={<SiLeetcode />}
                             >
                                 @oliver_tuesta
                             </SocialLink>

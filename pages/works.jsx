@@ -16,19 +16,19 @@ const Works = () => {
                 </Heading>
                 <SimpleGrid columns={[2, 2, 2]} gap={6}>
                     <WorkGridItem
+                        id="lead-your-way"
+                        title="Lead Your Way"
+                        thumbnail={thumbLyw}
+                    >
+                        A landing page made with HTML, CSS and JavaScript.
+                    </WorkGridItem>
+                    <WorkGridItem
                         id="spigi"
                         title="Spigi Landing Page"
                         thumbnail={thumbLanding}
                     >
                         A product landing page made with HTML, CSS and
                         JavaScript.
-                    </WorkGridItem>
-                    <WorkGridItem
-                        id="lead-your-way"
-                        title="Lead Your Way"
-                        thumbnail={thumbLyw}
-                    >
-                        A landing page made with HTML, CSS and JavaScript.
                     </WorkGridItem>
                     <WorkGridItem
                         id="wallbot"

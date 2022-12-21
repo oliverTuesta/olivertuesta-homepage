@@ -28,6 +28,15 @@ const LeadYourWay = () => {
                         </Link>
                     </ListItem>
                     <ListItem>
+                        <Meta>Source</Meta>
+                        <Link
+                            href="https://olivertuesta.github.io/lead-your-way/"
+                            isExternal
+                        >
+                            Github <ExternalLinkIcon mx="2px" />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
                         <Meta>Stack</Meta>
                         Bootstrap 4, HTML, CSS
                     </ListItem>
