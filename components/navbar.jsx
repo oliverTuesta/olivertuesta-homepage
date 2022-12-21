@@ -79,9 +79,6 @@ const Navbar = (props) => {
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
-                    </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -112,15 +109,6 @@ const Navbar = (props) => {
                                     color={linkColor}
                                 >
                                     <MenuItem>Works</MenuItem>
-                                </Link>
-                                <Link
-                                    scroll={false}
-                                    as={NextLink}
-                                    href="/posts"
-                                    passHref
-                                    color={linkColor}
-                                >
-                                    <MenuItem>Posts</MenuItem>
                                 </Link>
                                 <Link
                                     isExternal

@@ -14,7 +14,7 @@ const Works = () => {
                 <Heading as={'h3'} mb={4} fontSize="xl">
                     Works
                 </Heading>
-                <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <SimpleGrid columns={[2, 2, 2]} gap={6}>
                     <WorkGridItem
                         id="spigi"
                         title="Spigi Landing Page"
