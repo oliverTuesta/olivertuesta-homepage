@@ -14,7 +14,7 @@ const Main = ({ children, router }) => {
                     content="initial-scale=1.0, width=device-width"
                 />
                 <meta name="description" content="Oliver's homepage" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/oliver.ico" />
                 <title>Oliver Tuesta - Homepage</title>
             </Head>
 
