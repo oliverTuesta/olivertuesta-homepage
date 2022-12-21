@@ -12,7 +12,7 @@ const Avocado = () => {
     const refContainer = useRef();
     const [loading, setLoading] = useState(true);
     const refRenderer = useRef();
-    const urlAvocadoGLB = 'avocado.glb';
+    const urlAvocadoGLB = '/avocado.glb';
 
     const handleWindowResize = useCallback(() => {
         const { current: renderer } = refRenderer;
