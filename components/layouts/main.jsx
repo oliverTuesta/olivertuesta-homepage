@@ -13,7 +13,16 @@ const Main = ({ children, router }) => {
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
-                <meta name="description" content="Oliver's homepage" />
+                <meta
+                    name="description"
+                    content="Oliver Tuesta's personal website"
+                />
+                <meta name="author" content="Oliver Tuesta" />
+                <meta
+                    name="keywords"
+                    content="Oliver Tuesta, persoanl website, Portfolio website, spigi"
+                />
+                <meta name="robots" content="all" />
                 <link rel="icon" href="/oliver.ico" />
                 <title>Oliver Tuesta - Homepage</title>
             </Head>
