@@ -20,7 +20,7 @@ const Main = ({ children, router }) => {
                 <meta name="author" content="Oliver Tuesta" />
                 <meta
                     name="keywords"
-                    content="Oliver Tuesta, Oliver Jesus Tuesta Yoplac, Oliver, Tuesta, spigi"
+                    content="Oliver Tuesta, persoanl website, Portfolio website, spigi"
                 />
                 <meta name="robots" content="all" />
                 <link rel="icon" href="/oliver.ico" />
