@@ -13,7 +13,10 @@ const Main = ({ children, router }) => {
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
-                <meta name="description" content="Oliver's homepage" />
+                <meta
+                    name="description"
+                    content="Oliver Tuesta's personal website"
+                />
                 <meta name="author" content="Oliver Tuesta" />
                 <meta
                     name="keywords"
