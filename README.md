@@ -1,12 +1,21 @@
 # Oliver Tuesta's personal website
 
-Welcome to my personal website, a showcase of my work and experience as a
-software engineer. Built with React.js, Next.js, Chakra UI, and Framer Motion,
-this website features a responsive design and smooth transitions between pages.
+Hi, and welcome the my website. I'm a software engineer student and this website
+is a place where i'll be sharing my work and experiences in the field. Built
+with Next.js this website features a responsive design and smooth transitions
+between pages.
+
+## Table of Content
+
+-   [Technologies Used](#technologies-used)
+-   [Setting Up and Running the Project](#setting-up-and-running-the-project)
+-   [Credits and Acknowledgements](#credits-and-acknowledgements)
+-   [Additional Information](#additional-information)
 
 ## Technologies Used
 
 -   React.js: A JavaScript library for building user interfaces
+-   Vercel: Platform to deploy websites
 -   Next.js: A framework for building server-rendered React applications
 -   Chakra UI: A React UI framework for building accessible and customizable
     user interfaces
@@ -24,8 +33,6 @@ this website features a responsive design and smooth transitions between pages.
 5. Visit `http://localhost:3000` in your browser to view the website
 
 ## Credits and Acknowledgements
-
-lint to a github profile:
 
 -   This project uses code from [craftzdog](https://github.com/craftzdog) ,
     which is released under the MIT license. Thank you for sharing your work!
