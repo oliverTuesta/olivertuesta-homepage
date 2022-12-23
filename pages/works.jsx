@@ -4,6 +4,7 @@ import { WorkGridItem, GridItemsStyle } from '../components/grid-item';
 import thumbWallbot from '../public/images/wallbot.png';
 import thumbLanding from '../public/images/landing-page.png';
 import thumbLyw from '../public/images/lyw.png';
+import thumbHero from '../public/images/extinct-hero.png';
 import Layout from '../components/layouts/article';
 
 const Works = () => {
@@ -14,7 +15,14 @@ const Works = () => {
                 <Heading as={'h3'} mb={4} fontSize="xl">
                     Works
                 </Heading>
-                <SimpleGrid columns={[2, 2, 2]} gap={6}>
+                <SimpleGrid columns={[1, 2, 2]} gap={6}>
+                    <WorkGridItem
+                        id="extinct-hero"
+                        title="Extinct Hero"
+                        thumbnail={thumbHero}
+                    >
+                        2D video game made with C++ and Visual Studio.
+                    </WorkGridItem>
                     <WorkGridItem
                         id="lead-your-way"
                         title="Lead Your Way"

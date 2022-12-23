@@ -27,7 +27,11 @@ const LinkItem = ({ href, path, children }) => {
             scroll={false}
             align="center"
             href={href}
-            bg={active ? 'glassTeal' : undefined}
+            bg={
+                active
+                    ? useColorModeValue('orange.400', 'glassTeal')
+                    : undefined
+            }
             color={active ? '#202023' : inactiveColor}
             borderRadius="sm"
             p={2}
