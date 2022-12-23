@@ -40,10 +40,10 @@ function Footer() {
                 as={Stack}
                 maxW={'container.md'}
                 py={4}
-                direction={{ base: 'column', md: 'row' }}
+                direction={{ base: 'column', sm: 'row' }}
                 spacing={4}
-                justify={{ base: 'center', md: 'space-between' }}
-                align={{ base: 'center', md: 'center' }}
+                justify={{ base: 'center', sm: 'space-between' }}
+                align={{ base: 'center', sm: 'center' }}
             >
                 <Text>© 2022 Oliver Tuesta. All rights reserved</Text>
                 <Stack direction={'row'} spacing={6}>
