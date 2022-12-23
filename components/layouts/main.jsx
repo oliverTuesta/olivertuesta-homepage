@@ -4,10 +4,11 @@ import Navbar from '../navbar';
 import PageTransition from '../page-transition';
 import Avocado from '../avocado';
 import NoSsr from '../no-ssr';
+import Footer from '../footer';
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main" pb={8}>
+        <Box as="main">
             <Head>
                 <meta
                     name="viewport"
@@ -35,6 +36,7 @@ const Main = ({ children, router }) => {
                 </NoSsr>
                 {children}
             </Container>
+            <Footer />
         </Box>
     );
 };

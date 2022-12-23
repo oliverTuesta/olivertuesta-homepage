@@ -27,7 +27,11 @@ const LinkItem = ({ href, path, children }) => {
             scroll={false}
             align="center"
             href={href}
-            bg={active ? 'glassTeal' : undefined}
+            bg={
+                active
+                    ? useColorModeValue('orange.400', 'glassTeal')
+                    : undefined
+            }
             color={active ? '#202023' : inactiveColor}
             borderRadius="sm"
             p={2}
@@ -52,11 +56,10 @@ const Navbar = (props) => {
             <Container
                 display="flex"
                 p={2}
-                maxW="container.lg"
+                maxW="5xl"
                 wrap="wrap"
                 align="center"
                 justify="space-between"
-                px={{ lg: 5 }}
             >
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>

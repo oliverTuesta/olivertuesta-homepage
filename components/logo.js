@@ -20,18 +20,19 @@ const LogoBox = styled.span`
 const Logo = () => {
     const footPrintImg = `/images/avocado.png`;
     return (
-        <Link href="/" scroll={false}>
+        <Link href="/">
             <LogoBox>
                 <Image
                     src={footPrintImg}
                     alt="footprint"
-                    width={25}
-                    height={25}
+                    width={20}
+                    height={20}
                 />
                 <Text
-                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                    color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                     ml={3}
                     fontSize="2xl"
+                    fontFamily="Poppins"
                 >
                     SPIGI
                 </Text>

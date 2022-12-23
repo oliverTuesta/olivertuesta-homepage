@@ -1,6 +1,13 @@
 import NexttLink from 'next/link';
 import Image from 'next/image';
-import { Box, Text, LinkBox, LinkOverlay, Heading } from '@chakra-ui/react';
+import {
+    Box,
+    Text,
+    LinkBox,
+    LinkOverlay,
+    Heading,
+    AspectRatio,
+} from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
@@ -28,15 +35,17 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
     return (
         <>
             <Box w="100%" align="center">
-                <NexttLink href={`/works/${id}`} scroll={false}>
+                <NexttLink href={`/works/${id}`}>
                     <LinkBox cursor={'pointer'}>
-                        <Image
-                            src={thumbnail}
-                            alt={title}
-                            loading="lazy"
-                            className="grid-item-image"
-                            placeholder="blur"
-                        />
+                        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+                            <Image
+                                src={thumbnail}
+                                alt={title}
+                                loading="lazy"
+                                className="grid-item-image"
+                                placeholder="blur"
+                            />
+                        </AspectRatio>
                         <Text mt={2} fontSize={20} fontWeight="bold">
                             {title}
                         </Text>
