@@ -52,11 +52,10 @@ const Navbar = (props) => {
             <Container
                 display="flex"
                 p={2}
-                maxW="container.lg"
+                maxW="5xl"
                 wrap="wrap"
                 align="center"
                 justify="space-between"
-                px={{ lg: 5 }}
             >
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
