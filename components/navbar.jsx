@@ -24,7 +24,6 @@ const LinkItem = ({ href, path, children }) => {
     return (
         <Link
             as={NextLink}
-            scroll={false}
             align="center"
             href={href}
             bg={
@@ -95,7 +94,6 @@ const Navbar = (props) => {
                             />
                             <MenuList>
                                 <Link
-                                    scroll={false}
                                     as={NextLink}
                                     color={linkColor}
                                     href="/"
@@ -104,7 +102,6 @@ const Navbar = (props) => {
                                     <MenuItem>About</MenuItem>
                                 </Link>
                                 <Link
-                                    scroll={false}
                                     as={NextLink}
                                     href="/works"
                                     passHref

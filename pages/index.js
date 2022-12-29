@@ -91,7 +91,7 @@ const Home = () => {
                         to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
-                        <NextLink href="/works" scroll={false}>
+                        <NextLink href="/works">
                             <Button
                                 rightIcon={<ChevronRightIcon />}
                                 colorScheme="orange"
@@ -151,10 +151,10 @@ const Home = () => {
                     <List display="flex" flexWrap="wrap">
                         <ListItem>
                             <SocialLink
-                                href="https://www.linkedin.com/in/oliver-jes%C3%BAs-tuesta-yoplac-533ba4200/"
+                                href="https://www.linkedin.com/in/olivertuesta/"
                                 Icon={<IoLogoLinkedin />}
                             >
-                                Oliver Tuesta
+                                @olivertuesta
                             </SocialLink>
                         </ListItem>
                         <ListItem>
@@ -179,14 +179,6 @@ const Home = () => {
                                 Icon={<SiLeetcode />}
                             >
                                 @oliver_tuesta
-                            </SocialLink>
-                        </ListItem>
-                        <ListItem>
-                            <SocialLink
-                                href="https://twitter.com/spigiplant"
-                                Icon={<IoLogoTwitter />}
-                            >
-                                @spigiplant
                             </SocialLink>
                         </ListItem>
                     </List>

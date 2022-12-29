@@ -60,11 +60,20 @@ const LeadYourWay = () => {
                 />
                 <AspectRatio maxW="640px" ratio={1.7} my={4}>
                     <iframe
+                        src="https://www.youtube.com/embed/otZ-ZsFI3y0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </AspectRatio>
+                <AspectRatio maxW="640px" ratio={1.7} my={4}>
+                    <iframe
                         src="https://www.youtube.com/embed/72WUrp0dRNY?start=369"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                 </AspectRatio>
             </Container>

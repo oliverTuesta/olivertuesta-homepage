@@ -2,10 +2,10 @@ import { WorkImage, Meta, Title } from '../../components/work';
 import {
     Container,
     Badge,
+    AspectRatio,
     Link,
     List,
     ListItem,
-    AspectRatio,
 } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import Paragraph from '../../components/paragraph';
@@ -13,31 +13,36 @@ import Layout from '../../components/layouts/article';
 
 const LeadYourWay = () => {
     return (
-        <Layout title="Lead Your Way">
+        <Layout title="Filtrado de Imagenes">
             <Container>
                 <Title>
-                    Lead Your Way
-                    <Badge ml={2}>2022</Badge>
+                    Filtrado de Im&aacute;genes
+                    <Badge ml={2}>2021</Badge>
                 </Title>
                 <Paragraph>
-                    Lead Your Way is a landing page for a fictional company that
-                    provides a service to rent out bikes. The landing page is
-                    built with Bootstrap 4 and is fully responsive.
+                    <b>Filtrado de Imagenes</b> is a web-based image processing
+                    tool that allows users to apply various image enhancement
+                    filters to both random and uploaded images. The filters
+                    include Sobel, Laplacian, and Median, which can be used to
+                    sharpen, smooth, and edge detect the images. The tool also
+                    includes a preview feature that allows users to see the
+                    changes in real-time before applying the filter to the final
+                    image.
                 </Paragraph>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Website</Meta>
                         <Link
-                            href="https://olivertuesta.github.io/lead-your-way/"
+                            href="https://olivertuesta.github.io/filtradoImagenes/"
                             isExternal
                         >
-                            lead-your-way <ExternalLinkIcon mx="2px" />
+                            filtradoImagenes <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Source</Meta>
                         <Link
-                            href="https://olivertuesta.github.io/lead-your-way/"
+                            href="https://github.com/oliverTuesta/filtradoImagenes"
                             isExternal
                         >
                             Github <ExternalLinkIcon mx="2px" />
@@ -45,26 +50,28 @@ const LeadYourWay = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        Bootstrap 4, HTML, CSS
+                        JavaScript, HTML, CSS
                     </ListItem>
                 </List>
                 <WorkImage
-                    src="/images/works/lead-your-way_01.png"
-                    alt="Lead Your Way"
+                    src="/images/works/filtrado-imagenes_01.png"
+                    alt="Filtrado de imágenes"
                 />
                 <WorkImage
-                    src="/images/works/lead-your-way_02.png"
-                    alt="Lead Your Way"
+                    src="/images/works/filtrado-imagenes_02.png"
+                    alt="Filtrado de imágenes"
                 />
                 <WorkImage
-                    src="/images/works/lead-your-way_03.png"
-                    alt="Lead Your Way"
+                    src="/images/works/filtrado-imagenes_03.png"
+                    alt="Filtrado de imágenes"
+                />
+                <WorkImage
+                    src="/images/works/filtrado-imagenes_04.png"
+                    alt="Filtrado de imágenes"
                 />
                 <AspectRatio maxW="640px" ratio={1.7} my={4}>
                     <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/b3r0UlN-JkY?start=369"
+                        src="https://www.youtube.com/embed/DRh1l9FuN9w?start=405"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
