@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import NextImage from 'next/image';
 import {
     Box,
     Button,
@@ -67,10 +68,12 @@ const Home = () => {
                             width="150px"
                             height="150px"
                             bg={useColorModeValue('glassTeal', '#FAC887')}
+                            position="relative"
                         >
-                            <Image
+                            <NextImage
                                 display="inline-block"
                                 src="/images/spigi.png"
+                                fill
                             />
                         </Box>
                     </Box>

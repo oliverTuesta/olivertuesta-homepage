@@ -31,13 +31,14 @@ const Main = ({ children, router }) => {
 
             <Navbar path={router.asPath} />
 
-            <Container maxW="container.sm" pt={14}>
-                <Box py={10} px={4} borderRadius="sm" display="block">
+            <Container maxW="container.sm" pt={14} position="relative">
+                <Box py={5} borderRadius="sm" display="block">
                     <Image
                         src="/images/coder.gif"
                         alt="Coder"
-                        width={700}
-                        height={200}
+                        width={570}
+                        height={60}
+                        style={{ display: 'block', margin: 'auto' }}
                     />
                 </Box>
                 {children}
