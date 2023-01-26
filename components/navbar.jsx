@@ -1,6 +1,7 @@
 import Logo from './logo';
 import NextLink from 'next/link';
 import ThemeToggleButton from './theme-toggle-button';
+import { FiGithub } from 'react-icons/fi';
 
 import {
     Box,
@@ -20,7 +21,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 const LinkItem = ({ href, path, children }) => {
     const active = path === href;
-    const inactiveColor = useColorModeValue('gray.1000', 'whiteAlpha.900');
+    const inactiveColor = useColorModeValue('black', 'whiteAlpha.900');
     return (
         <Link
             as={NextLink}
@@ -43,7 +44,7 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = (props) => {
     const { path } = props;
-    const linkColor = useColorModeValue('gray.1000', 'whiteAlpha.900');
+    const linkColor = useColorModeValue('black', 'whiteAlpha.900');
     return (
         <Box
             position="fixed"
@@ -81,6 +82,19 @@ const Navbar = (props) => {
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
+
+                    <Link
+                        isExternal
+                        href="https://github.com/oliverTuesta/"
+                        display="inline-flex"
+                        alignItems="center"
+                        color={linkColor}
+                        style={{ gap: 7 }}
+                        pl={2}
+                    >
+                        <FiGithub />
+                        Github
+                    </Link>
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -117,7 +131,10 @@ const Navbar = (props) => {
                                     href="https://github.com/oliverTuesta"
                                     color={linkColor}
                                 >
-                                    <MenuItem>Github</MenuItem>
+                                    <MenuItem gap="2">
+                                        Github
+                                        <FiGithub />
+                                    </MenuItem>
                                 </Link>
                             </MenuList>
                         </Menu>

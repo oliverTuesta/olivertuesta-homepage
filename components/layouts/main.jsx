@@ -1,5 +1,6 @@
 import { Box, Container } from '@chakra-ui/react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Navbar from '../navbar';
 import PageTransition from '../page-transition';
 import Avocado from '../avocado';
@@ -30,10 +31,15 @@ const Main = ({ children, router }) => {
 
             <Navbar path={router.asPath} />
 
-            <Container maxW="container.lg" pt={14}>
-                <NoSsr>
-                    <Avocado />
-                </NoSsr>
+            <Container maxW="container.sm" pt={14}>
+                <Box py={10} px={4} borderRadius="sm" display="block">
+                    <Image
+                        src="/images/coder.gif"
+                        alt="Coder"
+                        width={700}
+                        height={200}
+                    />
+                </Box>
                 {children}
             </Container>
             <Footer />
