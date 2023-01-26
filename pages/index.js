@@ -73,7 +73,8 @@ const Home = () => {
                             <NextImage
                                 display="inline-block"
                                 src="/images/spigi.png"
-                                fill
+                                width={150}
+                                height={150}
                             />
                         </Box>
                     </Box>

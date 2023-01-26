@@ -32,12 +32,12 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath} />
 
             <Container maxW="container.sm" pt={14} position="relative">
-                <Box py={5} px={4} borderRadius="sm" display="block">
+                <Box py={5} px={4} display="block">
                     <Image
                         src="/images/coder.gif"
-                        alt="Coder"
-                        width={570}
-                        height={60}
+                        alt="Robot coding with a cat gif"
+                        width={450}
+                        height={50}
                         style={{ display: 'block', margin: 'auto' }}
                         loading="eager"
                     />
