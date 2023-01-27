@@ -1,4 +1,4 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, AspectRatio } from '@chakra-ui/react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from '../navbar';
@@ -32,24 +32,16 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath} />
 
             <Container maxW="container.sm" pt={14} position="relative">
-                <Box
-                    my={5}
-                    mx="auto"
-                    position="relative"
-                    width="94%"
-                    height={{
-                        base: '250px',
-                        md: '300px',
-                    }}
-                >
+                <AspectRatio maxW="600px" ratio={2} my={4} mx="auto">
                     <Image
                         src="/images/coder.gif"
                         alt="Robot coding with a cat gif"
-                        fill
+                        width={150}
+                        height={60}
                         style={{ display: 'block', margin: 'auto' }}
                         loading="eager"
                     />
-                </Box>
+                </AspectRatio>
                 {children}
             </Container>
             <Footer />
