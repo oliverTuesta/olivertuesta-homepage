@@ -2,9 +2,6 @@ import { Box, Container, AspectRatio } from '@chakra-ui/react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from '../navbar';
-import PageTransition from '../page-transition';
-import Avocado from '../avocado';
-import NoSsr from '../no-ssr';
 import Footer from '../footer';
 
 const Main = ({ children, router }) => {
@@ -30,7 +27,6 @@ const Main = ({ children, router }) => {
             </Head>
 
             <Navbar path={router.asPath} />
-
             <Container maxW="container.sm" pt={14} position="relative">
                 <AspectRatio maxW="600px" ratio={2} my={4} mx="auto">
                     <Image

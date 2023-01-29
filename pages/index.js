@@ -5,7 +5,6 @@ import {
     Button,
     Container,
     Heading,
-    Image,
     useColorModeValue,
     Link,
     ListItem,
@@ -95,7 +94,7 @@ const Home = () => {
                         to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
-                        <NextLink href="/works" scroll={false}>
+                        <NextLink href="/works">
                             <Button
                                 rightIcon={<ChevronRightIcon />}
                                 colorScheme="orange"
