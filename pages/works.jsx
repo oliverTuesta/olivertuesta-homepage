@@ -5,6 +5,8 @@ import thumbWallbot from '../public/images/wallbot.png';
 import thumbLanding from '../public/images/landing-page.png';
 import thumbLyw from '../public/images/lyw.png';
 import thumbHero from '../public/images/extinct-hero.png';
+import thumbFiltrado from '../public/images/filtrado-imagenes.png';
+import thumbSpigi from '../public/images/works/spigi-landing-page_03.png';
 import Layout from '../components/layouts/article';
 
 const Works = () => {
@@ -24,6 +26,14 @@ const Works = () => {
                         2D video game made with C++ and Visual Studio.
                     </WorkGridItem>
                     <WorkGridItem
+                        id="filtrado-imagenes"
+                        title="Filtrado de Im&aacute;genes"
+                        thumbnail={thumbFiltrado}
+                    >
+                        Image filtering made with JavaScript for the
+                        Computational mathematics course.
+                    </WorkGridItem>
+                    <WorkGridItem
                         id="lead-your-way"
                         title="Lead Your Way"
                         thumbnail={thumbLyw}
@@ -31,12 +41,11 @@ const Works = () => {
                         A landing page made with HTML, CSS and JavaScript.
                     </WorkGridItem>
                     <WorkGridItem
-                        id="spigi"
+                        id="spigi-landing-page"
                         title="Spigi Landing Page"
-                        thumbnail={thumbLanding}
+                        thumbnail={thumbSpigi}
                     >
-                        A product landing page made with HTML, CSS and
-                        JavaScript.
+                        A product landing page made with HTML and CSS.
                     </WorkGridItem>
                     <WorkGridItem
                         id="wallbot"
