@@ -27,7 +27,7 @@ const Home = () => {
             <Container maxW="container.md">
                 <Box
                     borderRadius="10"
-                    bg={useColorModeValue('whiteAlpha.700', 'whiteAlpha.200')}
+                    bg={useColorModeValue('orange.100', 'whiteAlpha.200')}
                     p={3}
                     mb={6}
                     align="center"
