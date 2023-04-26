@@ -44,7 +44,7 @@ function Footer() {
                 spacing={4}
                 justify={{ base: 'center', sm: 'space-between' }}
                 align={{ base: 'center', sm: 'center' }}
-                color="gray.400"
+                color="gray.500"
                 fontSize={'0.8rem'}
             >
                 <Text>© 2022 Oliver Tuesta</Text>
