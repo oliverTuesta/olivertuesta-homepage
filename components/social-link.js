@@ -5,7 +5,7 @@ const SocialLink = (props) => {
     return (
         <Box>
             <Link href={href} isExternal p={2}>
-                <Button variant="ghost" colorScheme="teal" leftIcon={Icon}>
+                <Button variant="ghost" colorScheme="green" leftIcon={Icon}>
                     {children}
                 </Button>
             </Link>
