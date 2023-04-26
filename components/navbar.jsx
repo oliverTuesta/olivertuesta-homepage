@@ -27,11 +27,7 @@ const LinkItem = ({ href, path, children }) => {
             as={NextLink}
             align="center"
             href={href}
-            bg={
-                active
-                    ? useColorModeValue('orange.400', 'glassTeal')
-                    : undefined
-            }
+            bg={active ? useColorModeValue('orange.500', 'orange.200') : undefined}
             color={active ? '#202023' : inactiveColor}
             borderRadius="sm"
             p={2}
@@ -107,20 +103,10 @@ const Navbar = (props) => {
                                 variant="outline"
                             />
                             <MenuList>
-                                <Link
-                                    as={NextLink}
-                                    color={linkColor}
-                                    href="/"
-                                    passHref
-                                >
+                                <Link as={NextLink} color={linkColor} href="/" passHref>
                                     <MenuItem>About</MenuItem>
                                 </Link>
-                                <Link
-                                    as={NextLink}
-                                    href="/works"
-                                    passHref
-                                    color={linkColor}
-                                >
+                                <Link as={NextLink} href="/works" passHref color={linkColor}>
                                     <MenuItem>Works</MenuItem>
                                 </Link>
                                 <Link

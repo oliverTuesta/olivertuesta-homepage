@@ -50,7 +50,7 @@ const Home = () => {
                             overflow={'hidden'}
                             width="150px"
                             height="150px"
-                            bg={useColorModeValue('glassTeal', '#FAC887')}
+                            bg={useColorModeValue('green.500', 'green.200')}
                             position="relative"
                         >
                             <NextImage
@@ -82,7 +82,7 @@ const Home = () => {
                             </Button>
                         </NextLink>
                         <NextLink href="mailto:oliver.jtuesta@gmail.com">
-                            <Button rightIcon={<IoMdMail />} colorScheme="teal">
+                            <Button rightIcon={<IoMdMail />} colorScheme="green">
                                 Contact
                             </Button>
                         </NextLink>
