@@ -44,13 +44,12 @@ function Footer() {
                 spacing={4}
                 justify={{ base: 'center', sm: 'space-between' }}
                 align={{ base: 'center', sm: 'center' }}
+                color="gray.400"
+                fontSize={'0.8rem'}
             >
-                <Text>© 2022 Oliver Tuesta. All rights reserved</Text>
+                <Text>© 2022 Oliver Tuesta</Text>
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton
-                        label={'Twitter'}
-                        href={'https://twitter.com/oliver_tuesta'}
-                    >
+                    <SocialButton label={'Twitter'} href={'https://twitter.com/oliver_tuesta'}>
                         <FaTwitter />
                     </SocialButton>
                 </Stack>

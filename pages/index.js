@@ -71,9 +71,9 @@ const Home = () => {
                         Oliver is a software engineering student from Peru with a passion for
                         computers and art. He enjoys using his coding skills to solve problems and
                         is always looking for ways to improve his abilities. When not in front of a
-                        computer, Oliver enjoys reading books, going to the gym, solving puzzles,
-                        and drawing. He is driven and dedicated to his studies and is eager to put
-                        his skills to use in the field of software engineering.
+                        computer, Oliver enjoys reading books, going to the gym, competitive
+                        programming, and drawing. He is driven and dedicated to his studies and is
+                        eager to put his skills to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works">
