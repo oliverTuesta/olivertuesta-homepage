@@ -16,12 +16,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio';
 import SocialLink from '../components/social-link';
 
-import {
-    IoLogoTwitter,
-    IoLogoGithub,
-    IoMdMail,
-    IoLogoLinkedin,
-} from 'react-icons/io';
+import { IoLogoTwitter, IoLogoGithub, IoMdMail, IoLogoLinkedin } from 'react-icons/io';
 import { SiLeetcode } from 'react-icons/si';
 
 import Layout from '../components/layouts/article';
@@ -44,22 +39,11 @@ const Home = () => {
                         <Heading as="h2" variant="page-title">
                             Oliver Tuesta
                         </Heading>
-                        <p>
-                            Developer, artist, and designer specializing in
-                            custom, handmade work
-                        </p>
+                        <p>Developer and artist specializing in custom, handmade work</p>
                     </Box>
-                    <Box
-                        flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ sm: 6 }}
-                        align="center"
-                    >
+                    <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ sm: 6 }} align="center">
                         <Box
-                            borderColor={useColorModeValue(
-                                'white',
-                                'whiteAlpha.900'
-                            )}
+                            borderColor={useColorModeValue('white', 'whiteAlpha.900')}
                             borderWidth={3}
                             borderStyle="solid"
                             borderRadius="full"
@@ -84,22 +68,16 @@ const Home = () => {
                         About Oliver
                     </Heading>
                     <Paragraph>
-                        Oliver is a software engineering student from Peru with
-                        a passion for computers and art. He enjoys using his
-                        coding skills to solve problems and is always looking
-                        for ways to improve his abilities. When not in front of
-                        a computer, Oliver enjoys reading books, going to the
-                        gym, solving puzzles, and drawing. He is driven and
-                        dedicated to his studies and is eager to put his skills
-                        to use in the field of software engineering.
+                        Oliver is a software engineering student from Peru with a passion for
+                        computers and art. He enjoys using his coding skills to solve problems and
+                        is always looking for ways to improve his abilities. When not in front of a
+                        computer, Oliver enjoys reading books, going to the gym, solving puzzles,
+                        and drawing. He is driven and dedicated to his studies and is eager to put
+                        his skills to use in the field of software engineering.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works">
-                            <Button
-                                rightIcon={<ChevronRightIcon />}
-                                colorScheme="orange"
-                                mr={4}
-                            >
+                            <Button rightIcon={<ChevronRightIcon />} colorScheme="orange" mr={4}>
                                 Portfolio
                             </Button>
                         </NextLink>
@@ -120,8 +98,7 @@ const Home = () => {
                         Born in Amazonas, Peru
                     </BioSection>
                     <BioSection>
-                        <BioYear>2017</BioYear>Write my first Hello World
-                        program
+                        <BioYear>2017</BioYear>Write my first Hello World program
                     </BioSection>
                     <BioSection>
                         <BioYear>2021 - present</BioYear>
@@ -134,14 +111,11 @@ const Home = () => {
                         Interests
                     </Heading>
                     <Paragraph>
-                        Art,{' '}
-                        <Link
-                            href="https://twitter.com/oliver_tuesta"
-                            isExternal
-                        >
+                        Hackathons,{' '}
+                        <Link href="https://twitter.com/oliver_tuesta" isExternal>
                             Web development
                         </Link>
-                        {', '} Machine learning,{' '}
+                        {', '} Machine learning and{' '}
                         <Link href="https://twitter.com/spigiplant" isExternal>
                             Drawing
                         </Link>

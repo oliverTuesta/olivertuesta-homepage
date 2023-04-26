@@ -21,8 +21,6 @@ between pages.
     user interfaces
 -   Framer Motion: A library for creating smooth animations and transitions in
     React
--   Three.js: A JavaScript library used to create and display animated 3D
-    graphics
 
 ## Setting Up and Running the Project
 
