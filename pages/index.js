@@ -112,11 +112,11 @@ const Home = () => {
                     </Heading>
                     <Paragraph>
                         Hackathons,{' '}
-                        <Link href="https://twitter.com/oliver_tuesta" isExternal>
+                        <Link href="https://twitter.com/spigiis" isExternal>
                             Web development
                         </Link>
                         {', '} Machine learning and{' '}
-                        <Link href="https://twitter.com/spigiplant" isExternal>
+                        <Link href="https://twitter.com/spigiis" isExternal>
                             Drawing
                         </Link>
                     </Paragraph>
@@ -144,7 +144,7 @@ const Home = () => {
                         </ListItem>
                         <ListItem>
                             <SocialLink
-                                href="https://twitter.com/oliver_tuesta"
+                                href="https://twitter.com/spigiis"
                                 Icon={<IoLogoTwitter />}
                             >
                                 @oliver_tuesta

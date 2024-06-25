@@ -49,7 +49,7 @@ function Footer() {
             >
                 <Text>© 2022 Oliver Tuesta</Text>
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Twitter'} href={'https://twitter.com/oliver_tuesta'}>
+                    <SocialButton label={'Twitter'} href={'https://twitter.com/spigiis'}>
                         <FaTwitter />
                     </SocialButton>
                 </Stack>
