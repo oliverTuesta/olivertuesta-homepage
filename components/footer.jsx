@@ -7,7 +7,7 @@ import {
     useColorModeValue,
     VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaTwitter } from 'react-icons/fa';
+import { AiFillFire } from "react-icons/ai";
 
 const SocialButton = ({ children, label, href }) => {
     return (
@@ -49,8 +49,8 @@ function Footer() {
             >
                 <Text>© 2022 Oliver Tuesta</Text>
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Twitter'} href={'https://twitter.com/spigiis'}>
-                        <FaTwitter />
+                    <SocialButton label={'Twitter'} href={'https://spigisblog.vercel.app/'}>
+                        <AiFillFire />
                     </SocialButton>
                 </Stack>
             </Container>

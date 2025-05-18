@@ -77,7 +77,17 @@ const Navbar = (props) => {
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
-
+                    <Link
+                        isExternal
+                        href="https://spigisblog.vercel.app/"
+                        display="inline-flex"
+                        alignItems="center"
+                        color={linkColor}
+                        style={{ gap: 7 }}
+                        pl={2}
+                    >
+                        Spigisblog
+                    </Link>
                     <Link
                         isExternal
                         href="https://github.com/oliverTuesta/"

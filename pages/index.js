@@ -104,11 +104,15 @@ const Home = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2024</BioYear>
-                        QA Trainee at Visma
+                        Visma - QA Trainee
                     </BioSection>
                     <BioSection>
                         <BioYear>2024</BioYear>
-                        Banco de Credito del Peru Intern
+                        Banco de Credito del Peru - Intern
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>2024</BioYear>
+                        Tucambista - Software engineer
                     </BioSection>
                 </Section>
 
@@ -135,10 +139,10 @@ const Home = () => {
                         </ListItem>
                         <ListItem>
                             <SocialLink
-                                href="https://twitter.com/spigiis"
+                                href="https://twitter.com/spigizzz"
                                 Icon={<IoLogoTwitter />}
                             >
-                                @oliver_tuesta
+                                @spigizzz
                             </SocialLink>
                         </ListItem>
                         <ListItem>
